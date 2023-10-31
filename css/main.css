@@ -1,10 +1,11 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
 
 html {
-    background-color: lightgray;
-    font-family: 'Quicksand', sans-serif;
+    background-color: #a3b18a;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
 }
@@ -17,12 +18,13 @@ html {
 h1 {
     font-weight: normal;
     margin: auto;
-    background: #fff;
+    background: #dad7cd;
     line-height: 2.5em;
 }
 
+
 main.wrapper {
-    background-color: white;
+    background-color: #dad7cd;
     overflow: auto;
 }
 
@@ -43,7 +45,7 @@ a {
 
 a:hover {
     color: whitesmoke;
-    background-color: darkcyan;
+    background-color: rgb(108, 167, 121);
     text-decoration: none;
 }
 
