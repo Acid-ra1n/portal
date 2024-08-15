@@ -20,13 +20,49 @@
       <a href="https://github.com/Acid-ra1n" target="_blank"><img src="icons/github.png"></a>
       <a href="https://www.linkedin.com/in/noah-berhanu-2a1678293/" target="_blank"><img src="icons/linkedin.png"></a>
     </div>
-
+    
     <p>Noah Berhanu</p>
   </nav>
   <main>
-    <h1 id="home">
-      Welcome to my Portfolio!
-    </h1>
+
+    <form id="contactBox">
+      <div class="header">
+        <h1>Contact</h1>
+      </div>
+      <div class="content">
+        <div class="column">  
+          <div>
+            <label>Full name:</label>
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+
+          <div class="emailDiv">
+            <label>Email:</label>
+            <div class="email">
+              <input type="email" name="email" placeholder="Your Email" id="email" required>
+            </div>
+          </div>
+          
+          <div>
+            <label>Message:</label>
+            <textarea name="message" placeholder="Your Message" id="message"></textarea>
+          </div>
+
+          <button type="submit"  id="submit">Submit</button>
+
+
+        </div>
+        <div class="info">
+          <div>  
+            Location: Kent, WA
+          </div>
+          <div>  
+            Email: noahb7y@outlook.com
+          </div>
+        </div>
+      </div>
+    </form>
+
   </main>
   <footer>
     <p>
@@ -38,6 +74,7 @@
       Noah Berhanu, All Rights Reserved ~ </small>
     </p>
   </footer>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
