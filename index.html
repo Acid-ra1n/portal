@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Noah Berhanu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/forms.css">
+ </head>
+ <body>
+     <header>
+     <h1>Noah Berhanu</h1>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="https://html-elements--benoah2003.repl.co/" target="_blank">HTML Elements</a>
+            <a href="https://acid-ra1n.github.io/stylin-with-css/" target="_blank">Stylin with CSS</a>
+            <a href="https://acid-ra1n.github.io/selectors/#class" target="_blank">CSS Selectors</a>
+            <a href="https://acid-ra1n.github.io/css-positioning/" target="_blank">Positioning</a>
+            <a href="https://acid-ra1n.github.io/time-of-day/" target="_blank">Time of Day</a>
+            <a href="https://acid-ra1n.github.io/daily-grind/" target="_blank">Daily Grind</a>
+            <a href="https://acid-ra1n.github.io/creatures/" target="_blank">Creatures</a>
+            <a href="https://acid-ra1n.github.io/form-processing/index.html" target="_blank">Form Processing</a>
+            <a href="https://github.com/Acid-ra1n" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/noah-berhanu-2a1678293" target="_blank">LinkedIn</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+     </header>
+     
+   <main class="wrapper">
+        <picture class="profile">
+            <source media="(min-width: 1200px)" srcset="images/head-desktop.jpg">
+            <source media="(min-width: 501px)" srcset="images/head-tablet.jpg">
+            <img src="images/head-mobile.jpg" alt="That's me!">
+        </picture>   
+       <h2 class="subheader">About Me</h2>
+       
+        <p>
+        My name is Noah Berhanu. I am an aspiring software developer. I live in Seattle, Washington. I am currently a student attending the Year Up program at Seattle Central College. I am in the Application/Development track in the program. I am developing the skills I need to become a software developer. 
+        <br><br>
+        I am learning web development concepts and software applications.  I am obtaining skills such as HTML/CSS, Python, and familarity with applications and tools used in this field. I am planning to eventually pursue a bachelors degree. In my free time  I enjoy walking in parks and looking at nature in my pastimes. I am a family-oriented person and enjoy spending time with with family.
+        </p>
+     
+    <footer>
+      <p><small>&copy; 2021-<span id="this-year"></span> by 
+          Noah Berhanu, All Rights Reserved ~ 
+          <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
+          <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+     </p>
+    </footer>
+  </main>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
+     
+     //set current year in span with id of this-year
+     let d = new Date(); let thisYear = d.getFullYear();
+     document.getElementById("this-year").innerHTML = thisYear;
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>
